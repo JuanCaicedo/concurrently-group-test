@@ -1,0 +1,16 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "concurrently": "3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "parallel": "concurrently 'bash script-one.sh' 'bash script-two.sh' --prefix '[{name}]' --prefix-colors 'cyan.dim,magenta.dim' --names 'one,two'"
+  },
+  "keywords": [],
+  "author": "Juan Caicedo <retiredcanadianpoet@gmail.com>",
+  "license": "ISC"
+}

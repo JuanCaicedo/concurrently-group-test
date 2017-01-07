@@ -1,0 +1,9 @@
+runE2E() {
+    ! concurrently --prefix "[{name}]" --prefix-colors "cyan.dim,magenta.dim" --names "PRODUCTION,STAGING   " "bash script-one.sh" "bash script-two.sh"
+}
+
+if ! runE2E ; then
+    echo 'success'
+else
+    echo 'fail'
+fi
