@@ -1,10 +1,10 @@
 {
-  "name": "test",
+  "name": "concurrently-group-test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "concurrently": "3.1.0"
+    "concurrently": "https://github.com/JuanCaicedo/concurrently.git#cc79e0675373f25a96f901e2fafea784a084d6e0"
   },
   "devDependencies": {},
   "scripts": {
