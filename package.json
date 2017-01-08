@@ -8,7 +8,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "parallel": "concurrently 'bash script-one.sh' 'bash script-two.sh' --prefix '[{name}]' --prefix-colors 'cyan.dim,magenta.dim' --names 'one,two'"
+    "one-two-three": "concurrently 'bash script-one.sh' 'bash script-two.sh' 'bash script-three.sh' --prefix '[{name}]' --prefix-colors 'cyan.dim,magenta.dim,blue.dim' --names 'one,two,three' --group",
+    "three-one-two": "concurrently 'bash script-three.sh' 'bash script-one.sh' 'bash script-two.sh' --prefix '[{name}]' --prefix-colors 'cyan.dim,magenta.dim,blue.dim' --names 'three,one,two' --group"
   },
   "keywords": [],
   "author": "Juan Caicedo <retiredcanadianpoet@gmail.com>",
